@@ -1,2 +1,8 @@
 .*
 !/.gitignore
+**/xrun.history
+**/ACCELLERA_OVL_VHDL_LIB
+**/dump.tcl
+**/work
+**/xrun.history
+**/xcelium.d
