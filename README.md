@@ -2,7 +2,7 @@
 
 | GitHub          | Playground          |  
 |-----------------+---------------------|  
-| [https://stackoverflow.com/questions/12080752/how-to-make-a-link-to-external-file-line-in-emacs-org-mode](#Named_Operators) | [[https://www.edaplayground.com/x/NQJz][assertions: complex]] |    
+| [Named_operators](#https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Named_Operators) | [assertions: complex](#https://www.edaplayground.com/x/NQJz)|    
 |                 |                     |
 
 
