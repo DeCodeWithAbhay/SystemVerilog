@@ -9,7 +9,7 @@
 
 * Constraints
   
-| GitHub          | Playground          |  `
+| GitHub          | Playground          |
 |---|---|
 
 * Coverage
