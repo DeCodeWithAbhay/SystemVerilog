@@ -1,0 +1,49 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Dec 23, 2024 at 08:09:29 EST
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		top
+Loading snapshot worklib.top:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+**************************************************
+Case2::PASS: a and b rise at same time . b falls after a
+**************************************************
+@1: a=1, b=1, c=0
+@5: Throughout: Started a=1, b=1
+@10: a=1, b=1, c=0
+@20: a=1, b=1, c=0
+@30: a=1, b=1, c=0
+@30: a=0, b=1, c=1
+@35: Throughout: Ended a=0, b=1
+@40: a=0, b=0, c=1
+@50: a=0, b=0, c=1
+@60: a=0, b=0, c=1
+@70: a=0, b=0, c=1
+**************************************************
+Case2::FAIL: a and b rise at same time . b falls after a
+**************************************************
+@70: a=1, b=1, c=0
+@75: Throughout: Started a=1, b=1
+@80: a=1, b=1, c=0
+@90: a=1, b=1, c=0
+@100: a=1, b=1, c=0
+@100: a=0, b=1, c=0
+@105: Throughout: Ended a=0, b=1
+xmsim: *E,ASRTST (./testbench.sv,83): (time 105 NS) Assertion top.ASSERT_THROUGHT has failed
+FAIL ASSERT_THROUGHT
+@110: a=0, b=0, c=1
+@120: a=0, b=0, c=1
+@130: a=0, b=0, c=1
+@140: a=0, b=0, c=1
+Simulation complete via $finish(1) at time 140 NS + 0
+./testbench.sv:68     $finish();
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Dec 23, 2024 at 08:09:30 EST  (total: 00:00:01)
