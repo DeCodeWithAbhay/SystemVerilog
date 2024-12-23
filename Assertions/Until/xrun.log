@@ -1,0 +1,75 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Dec 23, 2024 at 08:03:57 EST
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		top
+Loading snapshot worklib.top:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+**************************************************
+Case1:: a and b rise at same time . b and a falls at same time
+**************************************************
+@1: a=1, b=1, c=0
+@10: a=1, b=1, c=0
+@20: a=1, b=1, c=0
+@30: a=1, b=1, c=0
+@30: a=0, b=0, c=1
+@35: Until With: Ended a=0, b=0
+@35: Until With Delayed: Ended a=0, b=0
+@35: Until: Ended a=0, b=0
+@35: Until Delayed: Ended a=0, b=0
+xmsim: *E,ASRTST (./testbench.sv,139): (time 35 NS) Assertion top.ASSERT_UNTIL_WITH has failed
+FAIL ASSERT_UNTIL_WITH
+xmsim: *E,ASRTST (./testbench.sv,134): (time 35 NS) Assertion top.ASSERT_UNTIL_WITH_DELAYED has failed
+FAIL ASSERT_UNTIL_WITH_DELAYED
+@40: a=0, b=0, c=1
+@50: a=0, b=0, c=1
+@60: a=0, b=0, c=1
+@70: a=0, b=0, c=1
+**************************************************
+Case2::PASS: a and b rise at same time . b falls after a
+**************************************************
+@70: a=1, b=1, c=0
+@80: a=1, b=1, c=0
+@90: a=1, b=1, c=0
+@100: a=1, b=1, c=0
+@100: a=0, b=1, c=1
+@105: Until With: Ended a=0, b=1
+@105: Until With Delayed: Ended a=0, b=1
+@105: Until: Ended a=0, b=1
+@105: Until Delayed: Ended a=0, b=1
+@110: a=0, b=0, c=1
+@120: a=0, b=0, c=1
+@130: a=0, b=0, c=1
+@140: a=0, b=0, c=1
+**************************************************
+Case2::FAIL: a and b rise at same time . b falls after a
+**************************************************
+@140: a=1, b=1, c=0
+@150: a=1, b=1, c=0
+@160: a=1, b=1, c=0
+@170: a=1, b=1, c=0
+@170: a=0, b=1, c=0
+@175: Until With: Ended a=0, b=1
+@175: Until With Delayed: Ended a=0, b=1
+@175: Until: Ended a=0, b=1
+@175: Until Delayed: Ended a=0, b=1
+@180: a=0, b=0, c=1
+@185: Until With: Ended a=0, b=0
+@185: Until: Ended a=0, b=0
+xmsim: *E,ASRTST (./testbench.sv,139): (time 185 NS) Assertion top.ASSERT_UNTIL_WITH has failed
+FAIL ASSERT_UNTIL_WITH
+@190: a=0, b=0, c=1
+@200: a=0, b=0, c=1
+@210: a=0, b=0, c=1
+Simulation complete via $finish(1) at time 210 NS + 0
+./testbench.sv:93     $finish();
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Dec 23, 2024 at 08:03:59 EST  (total: 00:00:02)
