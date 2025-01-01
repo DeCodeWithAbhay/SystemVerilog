@@ -1,30 +1,32 @@
-* Assertions
+## 1. Assertions
 
-| GitHub          | Playground          |  
-|---|---|  
-| [Named_operators](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Named_Operators) | [assertions: complex](https://www.edaplayground.com/x/NQJz)|    
-|[Multithread](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Multithread)               | [assertion: Multithread](https://www.edaplayground.com/x/Rbnv)                    |
-|[Until](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Until) | [assertions: until](https://www.edaplayground.com/x/uZDM)|
-|[Throughout](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Throughout)|[assertions: Throughput End Test](https://www.edaplayground.com/x/j6yW)|
+| Section | Code hosted on Git          | Code hosted on Playground          |  
+|---|---|---|  
+| [1.1 Named_operators](#1.1Named_operators) | [GitHub](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Named_Operators)| [Playground](https://www.edaplayground.com/x/NQJz)|    
+|[1.2 Multithread]               | [GitHub](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Multithread)|  [Playground](https://www.edaplayground.com/x/Rbnv)                    |
+|[1.3 Until](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Until) | [Playground](https://www.edaplayground.com/x/uZDM)|
+|[1.4 Throughout](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Assertions/Throughout)|[Playground](https://www.edaplayground.com/x/j6yW)|
 
-* Constraints
+## 2. Constraints
   
 | GitHub          | Playground          |
 |---|---|
 
-* Coverage
+## 3. Coverage
 
 | GitHub          | Playground          |  
 |---|---|  
 
-* Extras
+## 4.  Extras
 
 | GitHub          | Playground          |  
 |---|---|  
 |[Compare Vector](https://github.com/DeCodeWithAbhay/SystemVerilog/tree/main/Extras/Compare-Vector)| [Compare bit with non zero vector](https://www.edaplayground.com/x/PCAJ)|
 |||
 
-* 
+
+
+### 1.1 Named_operators
 
 
 
